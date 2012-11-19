@@ -45,4 +45,9 @@ def set_platform_default_providers
     :resource => :firewall_rule,
     :provider => Chef::Provider::FirewallRuleUfw
   )
+  Chef::Platform.set(
+    :platform => :debian,
+    :resource => :firewall_rule,
+    :provider => Chef::Provider::FirewallRuleUfw
+  )
 end
